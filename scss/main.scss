@@ -1,0 +1,173 @@
+@import "_header.scss";
+@import "_footer.scss";
+@import "_media queris.scss";
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(157,163,235,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+
+h1{
+    color: midnightblue;
+    text-align: center;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 5rem;
+    padding: 3rem;
+}
+
+h2{
+    color: midnightblue;
+    text-align: center;
+    font-family: 'Wix Madefor Display', sans-serif;
+    margin: 5%;
+}
+
+h3{
+    color: midnightblue;
+    font-family: 'Wix Madefor Display', sans-serif;
+    margin: 1%;
+    text-align: center;
+}
+
+.conteiner{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+        .card{
+              background-color: cornflowerblue;
+              width: 20rem;
+              padding: 1rem;
+              border-radius: 5%;
+              margin: 1rem;
+            .card img{
+                width: 100%;
+                     }
+            .card .card_letra{
+                font-family: 'Wix Madefor Display', sans-serif;
+                             }
+            .card div{
+                display: flex;
+                justify-content:space-between ;
+                     }
+                    }
+            .card div a{
+                background-color: aliceblue;
+                padding: 0.2rem;
+                margin: 0.4rem;
+                border-radius: 15%;
+                        }  
+            }
+    
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content  min-content min-content min-content  ;
+    grid-template-areas: 
+      "titulo titulo"
+      "subtitulo subtitulo"
+      "block-1 block-2"
+      "subtitulo2 subtitulo2"
+      "block-3 block-4";
+    
+}
+
+
+.grid .grid_titulo{
+    grid-area: titulo;
+    padding: 3rem;
+}
+
+.grid_block-subtitulo{
+    grid-area: subtitulo;
+}
+
+.grid_block1{
+    grid-area: block-1;
+}
+
+.grid_block2{
+    grid-area: block-2;
+}
+
+.grid_block-subtitulo2{
+    grid-area: subtitulo2;
+}
+
+.grid_block3{
+    grid-area: block-3;
+}
+
+.grid_block4{
+    grid-area: block-4;
+}
+
+.grid_blockflex{
+    padding: 5rem;
+}
+
+.grid_block-img{
+    width: 100%;
+}
+
+.gird_block-descripción{
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+
+/*------- Preguntas Frecuentes-------*/
+
+.preguntas{
+    font-family: 'Wix Madefor Display', sans-serif;
+    margin: 4rem;
+    justify-content: left;
+    
+          .titulo-preguntas{
+                   background-color: rgb(207, 232, 233);
+                   margin: 3rem;
+          }
+        }
+
+.subtitulo{
+    margin: 2rem;
+    color: azure;
+}
+                    
+                
+
+.preguntas p{
+    color: azure;
+}
+                                    
+                                
+                            
+.preguntas-orden li{
+    color: azure;
+}
+                
+/*-------Ubicación-------*/
+
+.mapa-ubicación{
+    width: 100%;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+

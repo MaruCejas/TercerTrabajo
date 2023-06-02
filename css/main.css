@@ -1,0 +1,275 @@
+@charset "UTF-8";
+nav {
+  padding: 3rem;
+  background-color: steelblue;
+}
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+nav ul a {
+  text-decoration: none;
+  color: lightblue;
+  padding: 0.6rem 0.8rem;
+  margin: 5rem;
+  border-radius: 15px;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+.nav__link {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav__link:hover,
+.nav__submenu li a:hover {
+  background-color: aliceblue;
+  color: rgb(32, 32, 32);
+}
+
+.nav__submenu {
+  display: none;
+}
+
+.trigger:hover > .nav__submenu {
+  display: block;
+  position: absolute;
+  background-color: steelblue;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 10px 15px #888888;
+          box-shadow: 5px 10px 15px #888888;
+}
+
+.nav__submenu li {
+  margin: 1rem 0;
+}
+
+.footer_index {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgb(172, 197, 197);
+}
+
+.footer_div {
+  font-family: "Wix Madefor Display", sans-serif;
+  padding: 0.4rem 0.6rem;
+  margin: 0.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: lightsteelblue;
+  }
+  .grid {
+    grid-template-areas: "titulo titulo" "subtitulo block-1" "block-2 ..." "subtitulo2 block-3" "block-4 ...";
+  }
+  .grid_titulo {
+    padding: 2rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 780px) {
+  body {
+    background-color: aliceblue;
+  }
+  nav {
+    padding: 0.5rem;
+    background-color: steelblue;
+  }
+  .nav__link {
+    margin: 0.2rem;
+    font-size: 1rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
+    grid-template-areas: "titulo" "subtitulo" "block-1" "block-2" "subtitulo2" "block-3" "block-4";
+    margin: 10%;
+  }
+  .footer_index {
+    text-align: center;
+    padding: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lavender;
+  }
+  .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .footer_div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(2, 0, 36)), color-stop(35%, rgb(157, 163, 235)), to(rgb(0, 212, 255)));
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(157, 163, 235) 35%, rgb(0, 212, 255) 100%);
+}
+
+h1 {
+  color: midnightblue;
+  text-align: center;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 5rem;
+  padding: 3rem;
+}
+
+h2 {
+  color: midnightblue;
+  text-align: center;
+  font-family: "Wix Madefor Display", sans-serif;
+  margin: 5%;
+}
+
+h3 {
+  color: midnightblue;
+  font-family: "Wix Madefor Display", sans-serif;
+  margin: 1%;
+  text-align: center;
+}
+
+.conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.conteiner .card {
+  background-color: cornflowerblue;
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 5%;
+  margin: 1rem;
+}
+.conteiner .card .card img {
+  width: 100%;
+}
+.conteiner .card .card .card_letra {
+  font-family: "Wix Madefor Display", sans-serif;
+}
+.conteiner .card .card div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.conteiner .card div a {
+  background-color: aliceblue;
+  padding: 0.2rem;
+  margin: 0.4rem;
+  border-radius: 15%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content min-content min-content min-content;
+  grid-template-areas: "titulo titulo" "subtitulo subtitulo" "block-1 block-2" "subtitulo2 subtitulo2" "block-3 block-4";
+}
+
+.grid .grid_titulo {
+  grid-area: titulo;
+  padding: 3rem;
+}
+
+.grid_block-subtitulo {
+  grid-area: subtitulo;
+}
+
+.grid_block1 {
+  grid-area: block-1;
+}
+
+.grid_block2 {
+  grid-area: block-2;
+}
+
+.grid_block-subtitulo2 {
+  grid-area: subtitulo2;
+}
+
+.grid_block3 {
+  grid-area: block-3;
+}
+
+.grid_block4 {
+  grid-area: block-4;
+}
+
+.grid_blockflex {
+  padding: 5rem;
+}
+
+.grid_block-img {
+  width: 100%;
+}
+
+.gird_block-descripción {
+  font-family: "Wix Madefor Display", sans-serif;
+}
+
+/*------- Preguntas Frecuentes-------*/
+.preguntas {
+  font-family: "Wix Madefor Display", sans-serif;
+  margin: 4rem;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+.preguntas .titulo-preguntas {
+  background-color: rgb(207, 232, 233);
+  margin: 3rem;
+}
+
+.subtitulo {
+  margin: 2rem;
+  color: azure;
+}
+
+.preguntas p {
+  color: azure;
+}
+
+.preguntas-orden li {
+  color: azure;
+}
+
+/*-------Ubicación-------*/
+.mapa-ubicación {
+  width: 100%;
+  height: 300px;
+}

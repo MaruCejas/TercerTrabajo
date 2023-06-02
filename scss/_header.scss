@@ -1,0 +1,48 @@
+nav{
+    padding:3rem ;
+    background-color: steelblue;
+
+    ul{
+       list-style: none;
+       display: flex;
+       justify-content: center;
+
+       a{ 
+         text-decoration: none;
+         color: lightblue;
+         padding: .6rem .8rem;
+         margin: 05rem;
+         border-radius: 15px;
+         font-family: 'Wix Madefor Display', sans-serif;
+       }
+   }
+}
+
+
+
+.nav__link{
+   transition: .3s;
+}
+
+.nav__link:hover ,
+.nav__submenu li a:hover{
+   background-color: aliceblue;
+   color: rgb( 32, 32, 32);
+}
+
+.nav__submenu{
+   display: none;
+}
+
+
+.trigger:hover > .nav__submenu{
+        display: block;
+        position: absolute;
+        background-color: steelblue ;
+        border-radius: 15px;
+        box-shadow: 5px 10px 15px #888888;
+}
+
+.nav__submenu li{
+   margin: 1rem 0;
+}
